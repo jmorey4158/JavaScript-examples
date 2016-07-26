@@ -1,0 +1,321 @@
+﻿/* Place custom styles below */
+
+
+
+
+/* ===================================================== */
+/* ==============    DEBUG PANE     ==================== */
+/* ===================================================== */
+
+.debugPane 
+{
+	position: absolute;
+    color:  #0072C6; 
+    font-family: 'Segoe UI'; 
+    font-weight:normal; 
+    font-size: 13px;
+    text-align:left;
+    text-wrap:none;
+    border-width: thin;
+    border-color:  #0072C6;
+    border-style: solid;
+    top: 160px;
+    left: 30px;
+    width: 200px; 
+    height:400px;
+}
+
+
+
+
+/* ===================================================== */
+/* ==============        HEADER     ==================== */
+/* ===================================================== */
+.headerDiv
+{
+	position:fixed;
+    top: 0px;
+    left:0px;
+    width: 100%;  
+    background-color:fuchsia;
+}
+
+
+.pageLabel
+{
+	position: absolute;
+    color: #0072C6; 
+    font-family: 'Segoe UI'; 
+    font-weight:bold; 
+    font-size: 20px;
+    top: 20px; 
+    left: 10px;
+    text-align:left;
+    text-wrap:none;
+    width:400px;
+
+}
+
+
+.nameLabel
+{
+	position: absolute;
+    color: #0072C6; 
+    font-family: 'Segoe UI'; 
+    font-weight:bold; 
+    font-size:15px;
+    top: 15px; 
+    right: 90px;
+    text-align:right;
+    text-wrap:none;
+    width:200px;
+
+}
+
+
+.roleLabel
+{
+	position: absolute;
+    color: #0072C6; 
+    font-family: 'Segoe UI'; 
+    font-weight:normal; 
+    font-size:10px;
+    top: 40px; 
+    right: 90px;
+    text-align:right;
+    text-wrap:none;
+    width:200px;
+
+
+}
+
+
+.headshot
+{
+	position: absolute;
+    top: 10px; 
+    right: 20px;
+	width:60px;
+	height:60px; 
+    border:thin;
+    border-color:black;
+    border-style:solid;
+}
+
+
+
+
+
+
+
+/* ===================================================== */
+/* ============        BUTTON GRID     ================= */
+/* ===================================================== */
+.buttonGrid
+{   
+	position:absolute;
+    top: 100px;
+    left: 20px;
+}
+
+
+
+.tile 
+{
+    background-color: #0072C6;
+    height: 120px; 
+    width: 120px; 
+    position: absolute;
+}
+
+
+.tile_value
+{
+    position: absolute;
+    color: #FFFFFF; 
+    font-family: 'Segoe UI'; 
+    font-weight:bold; 
+    font-size: x-large;
+    top: 5px; 
+    left: 10px;
+}
+
+
+.tile_image
+{
+    height: 76px;
+    width: 76px;
+    position: absolute; 
+    top: 18px; 
+    left: 22px;
+}
+
+
+.tile_task
+{
+    position: absolute; 
+    top: 95px; 
+    left: 10px;
+    font-size: 13px; 
+    font-family: 'Segoe UI'; 
+    color:white;
+}
+
+
+
+
+
+
+
+
+/* ===================================================== */
+/* ============        DATA VIEW       ================= */
+/* ===================================================== */
+.dataSection
+{
+	position:absolute;
+	top: 100px;
+	left: 280px;
+	background-color:#0072C6;
+    font-family: 'Segoe UI'; 
+    font-weight:normal; 
+    font-size: medium;
+    width:1000px;
+    height:510px;
+
+}
+
+
+.dataView
+{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:980px;
+    height: 490px;
+    display:none;
+    text-align:center;
+    font-family: 'Segoe UI'; 
+    font-weight:bold; 
+    font-size:xx-large;
+    vertical-align:central;
+    color: #0072C6;
+}
+
+
+/* ===================================================== */
+/* ============        DATA TABLES       ================= */
+/* ===================================================== */
+.dataTable
+{
+	position:absolute;
+	top:2px;
+	left:2px;
+	width:100%;
+	font-family:"Segoe UI";
+	font-size:small;
+	color:white;
+	font-weight:normal;
+}
+
+.tableCaption
+{
+	font-family:"Segoe UI";
+	font-size:large;
+	color:white;
+	font-weight:bolder;
+}
+
+.tableHeaderRow
+{
+	font-family:"Segoe UI";
+	font-size:small;
+	color:white;
+	font-weight:normal;
+	border-bottom:medium;
+	border-bottom-color:white;
+	border-bottom-style:solid;
+	border-bottom-width:thin;
+}
+
+.tableHeaderColumn
+{
+	font-family:"Segoe UI";
+	font-size:small;
+	color:white;
+	font-weight:normal;
+	text-align:center;
+	
+}
+
+
+.tableDataCell
+{
+	font-family:"Segoe UI";
+	font-size:small;
+	color:white;
+	font-weight:normal;
+	
+	padding:2px;
+	padding-left: 5px;
+
+	border:thin;
+	border-color:white;
+	border-style:solid;
+
+    text-align:left;
+
+}
+
+
+.tableDataCellAction
+{
+
+    background-color:#0099CC;
+	font-family:"Segoe UI";
+	font-size:small;
+	color:white;
+	font-weight:normal;
+    text-align:left;
+	
+	padding:2px;
+	padding-left: 5px;
+
+	border:thin;
+	border-color:white;
+	border-style:solid;
+
+    cursor:pointer;
+
+}
+
+
+
+.peopleSelect
+{
+	background-color:#0099CC;
+	font-family:"Segoe UI";
+	font-size:small;
+    color: white;
+	border:thin;
+    cursor:pointer;
+
+    text-align:left;
+}
+
+
+
+/* ===================================================== */
+/* ============        Table Classes      ============== */
+/* ===================================================== */
+
+.overDue{
+    color: red;
+    font-weight: bold;
+}
+
+
+.atRisk{
+    color: orange;
+    font-weight: bold;
+}

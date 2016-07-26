@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title><-- REMOVED TO COMPLY WITH NDA--></title>
+
+    <!-- Add your CSS styles to the following file -->
+    <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
+
+    <!-- Add your JavaScript to the following file -->
+    <script type="text/javascript" src="../Scripts/App.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
+
+</head>
+<body>
+
+
+    <!-- Button Grid -->
+    <div id="ButtonGrid" class="buttonGrid">
+
+	<div id="ReviewStatus" class="tile" style="top: 0px; left: 0px;" onclick="showView('<-- REMOVED TO COMPLY WITH NDA-->')">
+		<label id="ValueReviewStatus" class="tile_value">8</label>
+		<img class="tile_image" alt="" src="../Images/appbar.group.png" />
+		<label id="TileLabel_ReviewStatus" class="tile_task">Review</label>
+	</div>
+	
+	
+	
+	<div id="SDLReviewStatus" class="tile" style="top: 0px; left: 130px;" onclick="showView('<-- REMOVED TO COMPLY WITH NDA-->')">
+		<label id="<-- REMOVED TO COMPLY WITH NDA-->" class="tile_value">4</label>
+		<img class="tile_image" alt="" src="../Images/appbar.suitcase.png" />
+		<label id="TileLabel_<-- REMOVED TO COMPLY WITH NDA-->" class="tile_task">SDL Status</label>
+	</div>
+	
+	
+	<div id="ACCReview"  class="tile" style="top: 130px; left: 0px;" onclick="showView('<-- REMOVED TO COMPLY WITH NDA-->')">
+		<label id="Value" class="tile_value">4</label>
+		<img class="tile_image" alt="" src="../Images/appbar.calendar.tomorrow.png" />
+		<label id="TileLabel_<-- REMOVED TO COMPLY WITH NDA-->" class="tile_task"><-- REMOVED TO COMPLY WITH NDA--></label>
+	</div>
+
+
+	<div id="ResultsByConclusion" class="tile" style="top: 130px; left: 130px;" onclick="showView('<-- REMOVED TO COMPLY WITH NDA-->')">
+		<label id="ValueResultsByConclusion" class="tile_value">5</label>
+		<img class="tile_image" alt="" src="../Images/appbar.deeplink.round.png" />
+		<label id="TileLabel_ResultsByConclusion" class="tile_task">Conclusions</label>
+	</div>
+
+    </div><!-- Button Grid -->
+
+
+    <div id="dataSection" class="dataSection" style="left: 280px;">
+
+
+         <div id="<!-- REMOVED TO COMPLY WITH NDA -->" class="dataView">
+            <table class="dataTable">
+                <caption class="tableCaption"><-- REMOVED TO COMPLY WITH NDA--></caption>
+                <tr class="tableHeaderRow">
+                    <th class="tableHeaderColumn">Assessment</th>
+                    <th class="tableHeaderColumn">Due Date</th>
+                    <th class="tableHeaderColumn">Score</th>
+                    <th class="tableHeaderColumn">Specialist</th>
+                    <th class="tableHeaderColumn">Supervisor's Comments</th>
+                    <th class="tableHeaderColumn">Response</th>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell">1/7/2015</td>
+                    <td class="tableDataCell">10%</td>
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell"><textarea class="textArea"><-- REMOVED TO COMPLY WITH NDA--></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueReviewStatus', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell">1/7/2015</td>
+                    <td class="tableDataCell">30%</td>
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell"><textarea class="textArea"><-- REMOVED TO COMPLY WITH NDA--></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueReviewStatus', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell">1/7/2015</td>
+                    <td class="tableDataCell">50%</td>
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell"><textarea class="textArea"><-- REMOVED TO COMPLY WITH NDA--></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueReviewStatus', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell">1/7/2015</td>
+                    <td class="tableDataCell">50%</td>
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell"><textarea class="textArea"><-- REMOVED TO COMPLY WITH NDA--></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueReviewStatus', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell">1/7/2015</td>
+                    <td class="tableDataCell">60%</td>
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell"><textarea class="textArea"><-- REMOVED TO COMPLY WITH NDA--></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueReviewStatus', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell">1/7/2015</td>
+                    <td class="tableDataCell">70%</td>
+                    <td class="tableDataCell"><-- REMOVED TO COMPLY WITH NDA--></td>
+                    <td class="tableDataCell"><textarea class="textArea"><-- REMOVED TO COMPLY WITH NDA--></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueReviewStatus', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">1/7/2015</td>
+                    <td class="tableDataCell">70%</td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><textarea class="textArea"><-- REMOVED TO COMPLY WITH NDA--></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueReviewStatus', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">1/7/2015</td>
+                    <td class="tableDataCell">100%</td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><textarea class="textArea"><!-- REMOVED TO COMPLY WITH NDA --></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueReviewStatus', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div><!-- REMOVED TO COMPLY WITH NDA -->
+
+
+         <div id="<!-- REMOVED TO COMPLY WITH NDA -->" class="dataView">
+            <table class="dataTable">
+                <caption class="tableCaption"><!-- REMOVED TO COMPLY WITH NDA --></caption>
+                <tr class="tableHeaderRow">
+                    <th class="tableHeaderColumn">Work Item</th>
+                    <th class="tableHeaderColumn">Assistance Item</th>
+                    <th class="tableHeaderColumn">Request Date</th>
+                    <th class="tableHeaderColumn">Requested By</th>
+                    <th class="tableHeaderColumn">Request To</th>
+                    <th class="tableHeaderColumn">Request Reason</th>
+                    <th class="tableHeaderColumn">Notes</th>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('<!-- REMOVED TO COMPLY WITH NDA -->', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Need Instruction </option>
+                            <option class="peopleOption">Need Second Opinion</option>
+                            <option class="peopleOption">Need Clarification</option>
+                            <option class="peopleOption">Assistance Closed</option>
+                            <option class="peopleOption">Other... </option>
+                        </select>
+                    </td>
+                    <td class="tableDataCell"><textarea class="textArea">Notes go here....</textarea></td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">2014-7-12 00:00 Z</td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#<!-- REMOVED TO COMPLY WITH NDA -->', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Need Instruction </option>
+                            <option class="peopleOption">Need Second Opinion</option>
+                            <option class="peopleOption">Need Clarification</option>
+                            <option class="peopleOption">Assistance Closed</option>
+                            <option class="peopleOption">Other... </option>
+                        </select>
+                    </td>
+                    <td class="tableDataCell"><textarea class="textArea">Notes go here....</textarea></td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">2014-7-12 00:00 Z</td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#<!-- REMOVED TO COMPLY WITH NDA -->', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Need Instruction </option>
+                            <option class="peopleOption">Need Second Opinion</option>
+                            <option class="peopleOption">Need Clarification</option>
+                            <option class="peopleOption">Assistance Closed</option>
+                            <option class="peopleOption">Other... </option>
+                        </select>
+                    </td>
+                    <td class="tableDataCell"><textarea class="textArea">Notes go here....</textarea></td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">2014-7-12 00:00 Z</td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#<!-- REMOVED TO COMPLY WITH NDA -->', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Need Instruction </option>
+                            <option class="peopleOption">Need Second Opinion</option>
+                            <option class="peopleOption">Need Clarification</option>
+                            <option class="peopleOption">Assistance Closed</option>
+                            <option class="peopleOption">Other... </option>
+                        </select>
+                    </td>
+                    <td class="tableDataCell"><textarea class="textArea">Notes go here....</textarea></td>
+                </tr>
+
+            </table>
+        </div><!-- <!-- REMOVED TO COMPLY WITH NDA --> -->
+
+
+         <div id="<!-- REMOVED TO COMPLY WITH NDA -->" class="dataView">
+            <table class="dataTable">
+                <caption class="tableCaption"><!-- REMOVED TO COMPLY WITH NDA --></caption>
+                <tr class="tableHeaderRow">
+                    <th class="tableHeaderColumn">Assessment</th>
+                    <th class="tableHeaderColumn">Due Date</th>
+                    <th class="tableHeaderColumn">Status</th>
+                    <th class="tableHeaderColumn">SDL's Comments</th>
+                    <th class="tableHeaderColumn">Response</th>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">11/27/2014</td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><textarea class="textArea"><!-- REMOVED TO COMPLY WITH NDA --></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#<!-- REMOVED TO COMPLY WITH NDA -->', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">1/17/2015</td>
+                    <td class="tableDataCell">In-Progress</td>
+                    <td class="tableDataCell"><textarea class="textArea"><!-- REMOVED TO COMPLY WITH NDA --></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#<!-- REMOVED TO COMPLY WITH NDA -->', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">1/17/2015</td>
+                    <td class="tableDataCell">in-Preogress</td>
+                    <td class="tableDataCell"><textarea class="textArea"><!-- REMOVED TO COMPLY WITH NDA --></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#<!-- REMOVED TO COMPLY WITH NDA -->', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">1/17/2015</td>
+                    <td class="tableDataCell">In-Progress</td>
+                    <td class="tableDataCell"><textarea class="textArea"><!-- REMOVED TO COMPLY WITH NDA --></textarea></td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#<!-- REMOVED TO COMPLY WITH NDA -->', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Mark Review As Complete</option>
+                            <option class="peopleOption">Need Clarification On...</option>
+                            <option class="peopleOption">Request Reassignment</option>
+                        </select>
+                    </td>
+
+            </table>
+        </div><!-- REMOVED TO COMPLY WITH NDA -->
+
+
+         <div id="ConclusionsView" class="dataView">
+            <table class="dataTable">
+                <caption class="tableCaption">Results by Conclusion</caption>
+                <tr class="tableHeaderRow">
+                    <th class="tableHeaderColumn">Workbook</th>
+                    <th class="tableHeaderColumn">Assessment</th>
+                    <th class="tableHeaderColumn">Conclusion</th>
+                    <th class="tableHeaderColumn">Recommendation</th>
+                    <th class="tableHeaderColumn">Verify</th>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">PASS</td>
+                    <td class="tableDataCell">None</td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueResultsByConclusion', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Dissagree - Re-Open</option>
+                            <option class="peopleOption">Agree - Mark As Complete</option>
+                            <option class="peopleOption">Need Clarification...</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">PASS</td>
+                    <td class="tableDataCell">Provide Documents...</td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueResultsByConclusion', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Dissagree - Re-Open</option>
+                            <option class="peopleOption">Agree - Mark As Complete</option>
+                            <option class="peopleOption">Need Clarification...</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell">HR - Human Resources </td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">FAIL</td>
+                    <td class="tableDataCell">Please Re-Run Testing...</td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueResultsByConclusion', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Dissagree - Re-Open</option>
+                            <option class="peopleOption">Agree - Mark As Complete</option>
+                            <option class="peopleOption">Need Clarification...</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="tableDataRow">
+                    <td class="tableDataCell">HR - Human Resources </td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">PASS</td>
+                    <td class="tableDataCell">Provide Documents...</td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueResultsByConclusion', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Dissagree - Re-Open</option>
+                            <option class="peopleOption">Agree - Mark As Complete</option>
+                            <option class="peopleOption">Need Clarification...</option>
+                        </select>
+                    </td>
+                </tr>
+
+               <tr class="tableDataRow">
+                    <td class="tableDataCell">HR - Human Resources </td>
+                    <td class="tableDataCell"><!-- REMOVED TO COMPLY WITH NDA --></td>
+                    <td class="tableDataCell">PASS</td>
+                    <td class="tableDataCell">Provide Clarify...</td>
+                    <td class="tableDataCell">
+                        <select class="peopleSelect" 
+                                onclick="getCurrent(this.options[this.selectedIndex].value)"
+                                onchange="updateTile('#ValueResultsByConclusion', this.options[this.selectedIndex].value)">
+                            <option class="peopleOption">None</option>
+                            <option class="peopleOption">Dissagree - Re-Open</option>
+                            <option class="peopleOption">Agree - Mark As Complete</option>
+                            <option class="peopleOption">Need Clarification...</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </div><!-- ConclusionsView -->
+
+
+
+    </div><!-- dataSection -->
+
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    showView('#<!-- REMOVED TO COMPLY WITH NDA -->');
+
+});
+</script> 
+</body>
+</html>
